@@ -1,0 +1,20 @@
+{
+    "social": [
+        {
+            "name": "twitter",
+            "value": "https://twitter.com/username"
+        },
+        {
+            "name": "facebook",
+            "value": "https://facebook.com/username"
+        },
+        {
+            "name": "linkedin",
+            "value": "https://linkedin.com/username"
+        },
+        {
+            "name": "github",
+            "value": "https://twitter.com/username"
+        }
+    ]
+}
