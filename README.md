@@ -22,4 +22,5 @@
     "button": "Check on me"
 }
 ```
+15. Follow the same approach to update remaining pages, and also header and footer
 

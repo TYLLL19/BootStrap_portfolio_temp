@@ -1,0 +1,14 @@
+{
+    "items": [
+        {
+            "title": "HOME",
+            "url": "index.html",
+            "target": "_self"
+        },
+        {
+            "title": "ABOUT",
+            "url": "about.html",
+            "target": "_self"
+        }
+    ]
+}
