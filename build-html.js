@@ -6,7 +6,7 @@
 //Logic:
 //1. Read source data json
 //2. Read template html file
-//3. replace the {{value}} according to {{key}} with value from source data
+//3. replace the {{value}} according to {{key}} with value from source data, also check if it is array of
 //4. write to output html
 
 //Usage:
@@ -24,10 +24,36 @@ if (args.length < 3) {
 const data = JSON.parse(fs.readFileSync(args[0], 'utf8'));
 const template = fs.readFileSync(args[1], 'utf8');
 
-const output = template.replace(/{{\s*([^}\s]+)\s*}}/g, (match, key) => {
-    return data[key] || match;
+const lookupKeyAndReplaceWithValue = (data, template, prefix) => {
+    const keys = Object.keys(data);
+    let result = template;
+    keys.forEach(key => {
+        if (typeof data[key] === 'object') {
+            if (Array.isArray(data[key])) {
+                data[key].forEach((element, index) => {
+                    result = lookupKeyAndReplaceWithValue(element, result, `${key}.${index}.`);
+                });
+            } else {
+                result = lookupKeyAndReplaceWithValue(data[key], result, key + '.');
+            }
+        } else {
+            result = result.replace(new RegExp(`{{${(prefix ? prefix : '') + key}}}`, 'g'), data[key]);
+        }
+    });
+    return result;
 }
-);
 
-fs.writeFileSync(args[2], output);
+let test = "{{heading}}{{test.name}}{{item.0.name}}";
+let dataObj = {
+    heading: "Hello",
+    test: {
+        name: "World"
+    },
+    item: [{
+        name: "Item 1"
+    }]
+}
+let finalresult = lookupKeyAndReplaceWithValue(dataObj, test, '');
+
+fs.writeFileSync(args[2], finalresult);
 console.log('HTML file built successfully!');
