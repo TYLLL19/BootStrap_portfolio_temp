@@ -1,0 +1,21 @@
+{
+  "lists": [
+      {
+          "key": "heading",
+          "value": "I am ah1, a climber looking for jobs"
+      }, 
+      {
+          "key": "description",
+          "value": "Feel free to hire me for subsidsing my climbing shoes"
+      },
+      {
+          "key": "button",
+          "value": {
+            "text": "Check on my resume",
+            "url": "contact.html",
+            "target": "_self"
+          }
+      }
+  ]
+}
+
