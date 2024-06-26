@@ -1,12 +1,58 @@
 {
     "list": [
         {
+            "key": "Description",
+            "value": "A normal HK climber which farm codes, hire me for subsiding my climbing shoes"
+        },
+        {
+            "button": {
+                "text": "Check on my resume",
+                "url": "contact.html",
+                "target": "_self"
+            }
+        },
+        {
+            "key": "Background",
+            "value": "Information Engineering Major University Student."
+
+        },
+        {
+            "key": "ability",
+            "value": "Providing services for web/mobile app development"
+
+        },
+        {
             "key": "Birthday",
-            "value": "1995 May 1"
+            "value": "31 Oct 1998"
         },
         {
             "key": "Age",
             "value": "30"
+        },
+        {
+            "key": "Website",
+            "value": "https://tylll19.github.io/BootStrap_portfolio_temp/index.html"
+        },
+        {
+            "key": "Degree",
+            "value": "Bachelor"
+        },
+        {
+            "key": "Phone",
+            "value": "+852 68018409"
+        },
+        {
+            "key": "Email",
+            "value": "leungtingyat19@gmail.com"
+        },
+        {
+            "key": "City",
+            "value": "Hong Kong"
+        },
+        {
+            "key": "selfIntro",
+            "value": "Hi i am a student from HK who providing web development service."
         }
+        
     ]
 }

@@ -1,20 +1,16 @@
 {
     "social": [
         {
-            "name": "twitter",
-            "value": "https://twitter.com/username"
+            "name": "Instagram",
+            "value": "https://www.instagram.com/tyone_leung/"
         },
         {
             "name": "facebook",
-            "value": "https://facebook.com/username"
-        },
-        {
-            "name": "linkedin",
-            "value": "https://linkedin.com/username"
+            "value": "https://www.facebook.com/tingyat.leung"
         },
         {
             "name": "github",
-            "value": "https://twitter.com/username"
+            "value": "https://github.com/TYLLL19"
         }
     ]
 }
