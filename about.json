@@ -1,8 +1,7 @@
 {
   "item": [
     {
-      "key": "Description",
-      "value": "A normal HK climber which farm codes, hire me for subsiding my climbing shoes"
+      "description": "A normal HK climber which farm codes, hire me for subsiding my climbing shoes"
     },
     {
       "button": {
@@ -12,50 +11,46 @@
       }
     },
     {
-      "key": "Background",
-      "value": "Information Engineering Major University Student."
+      "background": "Information Engineering Major University Student."
     },
     {
-      "key": "ability",
-      "value": "Providing services for web/mobile app development"
+      "ability": "Providing services for web/mobile app development"
     },
     {
-      "key": "Birthday",
-      "value": "31 Oct 1998"
+      "birthday": "31 Oct 1998"
     },
     {
-      "key": "Age",
-      "value": "30"
+      "age": "30"
     },
     {
-      "key": "Website",
-      "value": "https://tylll19.github.io/BootStrap_portfolio_temp/index.html"
+      "website": "https://tylll19.github.io/BootStrap_portfolio_temp/index.html"
     },
     {
-      "key": "Degree",
-      "value": "Bachelor"
+      "degree": "Bachelor"
     },
     {
-      "key": "Phone",
-      "value": "+852 68018409"
+      "phone": "+852 68018409"
     },
     {
-      "key": "Email",
-      "value": "leungtingyat19@gmail.com"
+      "email": "leungtingyat19@gmail.com"
     },
     {
-      "key": "City",
-      "value": "Hong Kong"
+      "city": "Hong Kong"
     },
     {
-      "key": "selfIntro",
-      "value": "Hi i am a student from HK who providing web development service."
+      "freelance": "available"
     },
+    {
+      "selfIntro1": "Hi i am a student from HK who providing web development service."
+    },
+    {
+      "selfIntro2": "Contact me for further details"
+    },
+
     {
       "about_test": "123"
     }
   ],
-  "about_test": "123",
   "info": {
     "birthday": "1970-01-01",
     "website": "github.com",

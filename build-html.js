@@ -31,14 +31,16 @@ const lookupKeyAndReplaceWithValue = (data, template, prefix) => {
         if (typeof data[key] === 'object') {
             if (Array.isArray(data[key])) {
                 data[key].forEach((element, index) => {
-                    result = lookupKeyAndReplaceWithValue(element, result, `${key}.${index}.`);
+                    result = lookupKeyAndReplaceWithValue(element, result, `${prefix}${key}.${index}.`);
                 });
             } else {
-                result = lookupKeyAndReplaceWithValue(data[key], result, key + '.');
+                result = lookupKeyAndReplaceWithValue(data[key], result, prefix + key + '.');
             }
         } else {
-            result = result.replace(new RegExp(`{{${(prefix ? prefix : '') + key}}}`, 'g'), data[key]);
-        }
+            console.log('key:', prefix + key);
+                        // console.log('replace', (prefix ? prefix : '') + key);
+                        result = result.replace(new RegExp(`{{${prefix + key}}}`, 'g'), data[key]);
+                    };
     });
     return result;
 }
