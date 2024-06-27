@@ -43,17 +43,6 @@ const lookupKeyAndReplaceWithValue = (data, template, prefix) => {
     return result;
 }
 
-let test = "{{heading}}{{test.name}}{{item.0.name}}";
-let dataObj = {
-    heading: "Hello",
-    test: {
-        name: "World"
-    },
-    item: [{
-        name: "Item 1"
-    }]
-}
-let finalresult = lookupKeyAndReplaceWithValue(dataObj, test, '');
-
-fs.writeFileSync(args[2], finalresult);
+let result = lookupKeyAndReplaceWithValue(data, template, '');
+fs.writeFileSync(args[2], result);
 console.log('HTML file built successfully!');
