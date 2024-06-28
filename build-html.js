@@ -1,55 +1,52 @@
 const fs = require('fs');
 const path = require('path');
+const { build_header } = require('./HEADER/header.js');
 
-// Node.js script to listen to 4 arguments
-// 1. Source data JSON
-// 2. Header template HTML file
-// 3. Template HTML file containing {{key}} to replace with JSON data
-// 4. Output HTML file
+// Node.js script to build HTML file using data and template
 
-// Logic:
-// 1. Read the source data JSON file
-// 2. Read the header template HTML file and the template HTML file
-// 3. Replace the {{value}} according to {{key}} with values from the source data
-// 4. Write to the output HTML
-
-// Usage:
-// node build-html.js data.json header.html template.html output.html
-
+// Check if all required arguments are provided
 const args = process.argv.slice(2);
-
-if (args.length < 5) {
-    console.log('Usage: node build-html.js data.json header.html template.html footer.html output.html');
+if (args.length < 3) {
+    console.log('Usage: node build-html.js data.json template.html output.html');
     process.exit(1);
 }
 
-const data = JSON.parse(fs.readFileSync(path.join('JSON', args[0]), 'utf8'));
-const headerTemplate = fs.readFileSync(path.join('HEADER', args[1]), 'utf8');
-const template = fs.readFileSync(path.join('TEMPLATE', args[2]), 'utf8');
+// Read the source data JSON file
+const jsonDataPath = path.join('JSON', args[0]);
+const data = JSON.parse(fs.readFileSync(jsonDataPath, 'utf8'));
 
+// Read the template HTML file
+const templatePath = path.join('TEMPLATE', args[1]);
+const template = fs.readFileSync(templatePath, 'utf8');
+
+// Build the header using the file name of the JSON file
+const header = build_header(`${path.basename(args[0])}`);
+
+// Replace {{header}} in the template with the header
+let result = template.replace('{{header}}', header);
+
+// Replace {{value}} according to {{key}} with values from the source data
 const lookupKeyAndReplaceWithValue = (data, template, prefix) => {
     const keys = Object.keys(data);
-    let result = template;
     keys.forEach((key) => {
         if (typeof data[key] === 'object') {
             if (Array.isArray(data[key])) {
                 data[key].forEach((element, index) => {
-                    result = lookupKeyAndReplaceWithValue(element, result, `${prefix}${key}.${index}.`);
+                    template = lookupKeyAndReplaceWithValue(element, template, `${prefix}${key}.${index}.`);
                 });
             } else {
-                result = lookupKeyAndReplaceWithValue(data[key], result, prefix + key + '.');
+                template = lookupKeyAndReplaceWithValue(data[key], template, prefix + key + '.');
             }
         } else {
-            result = result.replace(new RegExp(`{{${prefix + key}}}`, 'g'), data[key]);
+            template = template.replace(new RegExp(`{{${prefix + key}}}`, 'g'), data[key]);
         }
     });
-    return result;
+    return template;
 };
 
-const header = lookupKeyAndReplaceWithValue(data, headerTemplate, '');
-let result = lookupKeyAndReplaceWithValue(data, template, '');
+result = lookupKeyAndReplaceWithValue(data, result, '');
 
-result = result.replace('{{header}}', header);
-
-fs.writeFileSync(args[4], result);
+// Write to the output HTML file
+fs.writeFileSync(args[2], result);
+console.log(header)
 console.log('HTML file built successfully!');
