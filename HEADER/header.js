@@ -12,7 +12,7 @@ function build_header(currentPage) {
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" class="${currentPage === 'index.json'?'active':''}>Home<br></a></li>
+            <li><a href="index.html" class="${currentPage === 'index.json'?'active':''}">Home<br></a></li>
             <li><a href="about.html" class="${currentPage === 'about.json'?'active':''}">About</a></li>
             <li class="dropdown"><a href="gallery.html" class="${currentPage === 'gallery.json'?'active':''}"><span>Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
