@@ -1,50 +1,55 @@
-//Nodejs script to listen 3 arguments
-//1. source data json
-//2. template html file contains {{key}} to replace with json data
-//3. output html 
-
-//Logic:
-//1. Read source data json
-//2. Read template html file
-//3. replace the {{value}} according to {{key}} with value from source data, also check if it is array of
-//4. write to output html
-
-//Usage:
-//node build-html.js data.json template.html output.html
-
 const fs = require('fs');
 const path = require('path');
+
+// Node.js script to listen to 4 arguments
+// 1. Source data JSON
+// 2. Header template HTML file
+// 3. Template HTML file containing {{key}} to replace with JSON data
+// 4. Output HTML file
+
+// Logic:
+// 1. Read the source data JSON file
+// 2. Read the header template HTML file and the template HTML file
+// 3. Replace the {{value}} according to {{key}} with values from the source data
+// 4. Write to the output HTML
+
+// Usage:
+// node build-html.js data.json header.html template.html output.html
+
 const args = process.argv.slice(2);
 
-if (args.length < 3) {
-    console.log('Usage: node build-html.js data.json template.html output.html');
-    process.exit(1);
+if (args.length < 4) {
+  console.log('Usage: node build-html.js data.json header.html template.html output.html');
+  process.exit(1);
 }
 
 const data = JSON.parse(fs.readFileSync(args[0], 'utf8'));
-const template = fs.readFileSync(args[1], 'utf8');
+const headerTemplate = fs.readFileSync(args[1], 'utf8');
+const template = fs.readFileSync(args[2], 'utf8');
 
 const lookupKeyAndReplaceWithValue = (data, template, prefix) => {
-    const keys = Object.keys(data);
-    let result = template;
-    keys.forEach(key => {
-        if (typeof data[key] === 'object') {
-            if (Array.isArray(data[key])) {
-                data[key].forEach((element, index) => {
-                    result = lookupKeyAndReplaceWithValue(element, result, `${prefix}${key}.${index}.`);
-                });
-            } else {
-                result = lookupKeyAndReplaceWithValue(data[key], result, prefix + key + '.');
-            }
-        } else {
-            console.log('key:', prefix + key);
-                        // console.log('replace', (prefix ? prefix : '') + key);
-                        result = result.replace(new RegExp(`{{${prefix + key}}}`, 'g'), data[key]);
-                    };
-    });
-    return result;
-}
+  const keys = Object.keys(data);
+  let result = template;
+  keys.forEach((key) => {
+    if (typeof data[key] === 'object') {
+      if (Array.isArray(data[key])) {
+        data[key].forEach((element, index) => {
+          result = lookupKeyAndReplaceWithValue(element, result, `${prefix}${key}.${index}.`);
+        });
+      } else {
+        result = lookupKeyAndReplaceWithValue(data[key], result, prefix + key + '.');
+      }
+    } else {
+      result = result.replace(new RegExp(`{{${prefix + key}}}`, 'g'), data[key]);
+    }
+  });
+  return result;
+};
 
+const header = lookupKeyAndReplaceWithValue(data, headerTemplate, '');
 let result = lookupKeyAndReplaceWithValue(data, template, '');
-fs.writeFileSync(args[2], result);
+
+result = result.replace('{{header}}', header);
+
+fs.writeFileSync(args[3], result);
 console.log('HTML file built successfully!');
