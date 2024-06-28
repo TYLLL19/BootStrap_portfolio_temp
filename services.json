@@ -1,0 +1,45 @@
+{
+    "ability": "Providing services for web/mobile app development",
+    "buttonText": "Check on my resume",
+    "serviceItems":[
+        {
+            "title": "Web Development",
+            "value": "123"
+        },{
+            "title": "App Development",
+            "value": "123"
+        },{
+            "title": "Canva Design",
+            "value": "123"
+        },
+        {
+            "title": "Figma Design",
+            "value": "123"
+        }
+    ],
+    "prices":[
+        {
+            "title": "Web Development",
+            "value": "$100"
+        },{
+            "title": "App Development",
+            "value": "$200"
+        },{
+            "title": "Canva Design",
+            "value": "$300"
+        },
+        {
+            "title": "Figma Design",
+            "value": "$400"
+        },
+        {
+            "title": "ChatGPT Design",
+            "value": "$500"
+        },
+        {
+            "title": "AI Design",
+            "value": "$600"
+        }
+    ]
+
+}
