@@ -18,32 +18,34 @@ const path = require('path');
 
 const args = process.argv.slice(2);
 
-if (args.length < 4) {
-  console.log('Usage: node build-html.js data.json header.html template.html output.html');
-  process.exit(1);
+if (args.length < 5) {
+    console.log('Usage: node build-html.js data.json header.html template.html footer.html output.html');
+    process.exit(1);
 }
+
 
 const data = JSON.parse(fs.readFileSync(args[0], 'utf8'));
 const headerTemplate = fs.readFileSync(args[1], 'utf8');
 const template = fs.readFileSync(args[2], 'utf8');
+const footerTemplate = fs.readFileSync(args[3], 'utf8');
 
 const lookupKeyAndReplaceWithValue = (data, template, prefix) => {
-  const keys = Object.keys(data);
-  let result = template;
-  keys.forEach((key) => {
-    if (typeof data[key] === 'object') {
-      if (Array.isArray(data[key])) {
-        data[key].forEach((element, index) => {
-          result = lookupKeyAndReplaceWithValue(element, result, `${prefix}${key}.${index}.`);
-        });
-      } else {
-        result = lookupKeyAndReplaceWithValue(data[key], result, prefix + key + '.');
-      }
-    } else {
-      result = result.replace(new RegExp(`{{${prefix + key}}}`, 'g'), data[key]);
-    }
-  });
-  return result;
+    const keys = Object.keys(data);
+    let result = template;
+    keys.forEach((key) => {
+        if (typeof data[key] === 'object') {
+            if (Array.isArray(data[key])) {
+                data[key].forEach((element, index) => {
+                    result = lookupKeyAndReplaceWithValue(element, result, `${prefix}${key}.${index}.`);
+                });
+            } else {
+                result = lookupKeyAndReplaceWithValue(data[key], result, prefix + key + '.');
+            }
+        } else {
+            result = result.replace(new RegExp(`{{${prefix + key}}}`, 'g'), data[key]);
+        }
+    });
+    return result;
 };
 
 const header = lookupKeyAndReplaceWithValue(data, headerTemplate, '');
@@ -51,5 +53,8 @@ let result = lookupKeyAndReplaceWithValue(data, template, '');
 
 result = result.replace('{{header}}', header);
 
-fs.writeFileSync(args[3], result);
+const footer = fs.readFileSync(args[3], 'utf8');
+result = result.replace('{{footer}}', footer);
+
+fs.writeFileSync(args[4], result);
 console.log('HTML file built successfully!');

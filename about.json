@@ -1,46 +1,46 @@
 {
-      "description": "A normal HK climber which farm codes, hire me for subsiding my climbing shoes",
-      "buttonText": "Check on my resume",
-      "background": "Information Engineering Major University Student.",
-      "ability": "Providing services for web/mobile app development",
-      "personal_information": [
-          {
-            "title": "Birthday",
-            "value": "31 Oct 1998"
-          },
-          {
-            "title": "Age",
-            "value": "30"
-          },
-          {
-            "title": "Website",
-            "value": "https://tylll19.github.io/BootStrap_portfolio_temp/index.html"
-          },
-          {
-            "title": "Degree",
-            "value": "Bachelor"
-          },
-          {
-            "title": "Phone",
-            "value": "+852 68018409"
-          },
-          {
-            "title": "Email",
-            "value": "leungtingyat19@gmail.com"
-          },
-          {
-            "title": "City",
-            "value": "Hong Kong"
-          },
-          {
-            "title": "Freelance",
-            "value": "available"
-          }
-        ],
+  "description": "A normal HK climber which farm codes, hire me for subsiding my climbing shoes",
+  "buttonText": "Check on my resume",
+  "background": "Information Engineering Major University Student.",
+  "ability": "Providing services for web/mobile app development",
+  "personal_information": [
+    {
+      "title": "Birthday",
+      "value": "31 Oct 1998"
+    },
+    {
+      "title": "Age",
+      "value": "30"
+    },
+    {
+      "title": "Website",
+      "value": "https://tylll19.github.io/BootStrap_portfolio_temp/index.html"
+    },
+    {
+      "title": "Degree",
+      "value": "Bachelor"
+    },
+    {
+      "title": "Phone",
+      "value": "+852 68018409"
+    },
+    {
+      "title": "Email",
+      "value": "leungtingyat19@gmail.com"
+    },
+    {
+      "title": "City",
+      "value": "Hong Kong"
+    },
+    {
+      "title": "Freelance",
+      "value": "available"
+    }
+  ],
 
-      "selfIntro1": "Hi i am a student from HK who providing web development service.",
+  "selfIntro1": "Hi i am a student from HK who providing web development service.",
 
-      "selfIntro2": "Contact me for further details",
+  "selfIntro2": "Contact me for further details",
 
-      "about_test": "123"
+  "about_test": "123"
 }
