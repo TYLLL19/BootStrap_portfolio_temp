@@ -23,11 +23,9 @@ if (args.length < 5) {
     process.exit(1);
 }
 
-
-const data = JSON.parse(fs.readFileSync(args[0], 'utf8'));
-const headerTemplate = fs.readFileSync(args[1], 'utf8');
-const template = fs.readFileSync(args[2], 'utf8');
-const footerTemplate = fs.readFileSync(args[3], 'utf8');
+const data = JSON.parse(fs.readFileSync(path.join('JSON', args[0]), 'utf8'));
+const headerTemplate = fs.readFileSync(path.join('HEADER', args[1]), 'utf8');
+const template = fs.readFileSync(path.join('TEMPLATE', args[2]), 'utf8');
 
 const lookupKeyAndReplaceWithValue = (data, template, prefix) => {
     const keys = Object.keys(data);
@@ -52,9 +50,6 @@ const header = lookupKeyAndReplaceWithValue(data, headerTemplate, '');
 let result = lookupKeyAndReplaceWithValue(data, template, '');
 
 result = result.replace('{{header}}', header);
-
-const footer = fs.readFileSync(args[3], 'utf8');
-result = result.replace('{{footer}}', footer);
 
 fs.writeFileSync(args[4], result);
 console.log('HTML file built successfully!');
