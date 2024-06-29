@@ -14,8 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run build-html.js
-        run: node build-html.js
+      - name: Run build-html.js (services.json, services.template.html, footer.html -> services.html)
+        run: node build-html.js services.json services.template.html footer.html services.html
 
       - name: Run a one-line script
         run: echo Hello, world!
