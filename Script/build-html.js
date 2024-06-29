@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const { build_header } = require('./HEADER/header.js');
+const { build_header } = require('../HEADER/header.js');
 
 // Node.js script to build HTML file using data and template
 
