@@ -13,19 +13,19 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run build-html.js (services.json, services.template.html, html/footer.html -> services.html)
-        run: node Script/build-html.js services.json services.template.html html/footer.html html/services.html
+        run: node build-html.js services.json services.template.html html/footer.html html/services.html
 
       - name: Run build-html.js (index.json, index.template.html, html/footer.html -> index.html)
-        run: node Script/build-html.js index.json index.template.html html/footer.html html/index.html
+        run: node build-html.js index.json index.template.html html/footer.html html/index.html
       
       - name: Run build-html.js (about.json, about.template.html, html/footer.html -> about.html)
-        run: node Script/build-html.js about.json about.template.html html/footer.html html/about.html
+        run: node build-html.js about.json about.template.html html/footer.html html/about.html
 
       - name: Run build-html.js (contact.json, contact.template.html, html/footer.html -> contact.html)
-        run: node Script/build-html.js contact.json contact.template.html html/footer.html html/contact.html
+        run: node build-html.js contact.json contact.template.html html/footer.html html/contact.html
 
       - name: Run build-html.js (gallery.json, gallery.template.html, html/footer.html -> gallery.html)
-        run: node Script/build-html.js gallery.json gallery.template.html html/footer.html html/gallery.html
+        run: node build-html.js gallery.json gallery.template.html html/footer.html html/gallery.html
 
 
   deploy:
