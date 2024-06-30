@@ -1,14 +1,14 @@
 media: assets 
 
 content:
-  - name: Pages
-    label: Pages
+  - name: About
+    label: About
     path: pageCMS
     type: collection
     fields:
-    - {name: Jsontitle, label: JsonTitle, type: string}
-    - {name: myName, label: myName, type: string}
-    - {name: title, label: JsonTitle, type: string}
-    - {name: title, label: JsonTitle, type: string}
-    - {name: title, label: JsonTitle, type: string}
-    - {name: title, label: JsonTitle, type: string}
+    - {name: description, label: description, type: string}
+    - {name: buttonText, label: buttonText, type: string}
+    - {name: background, label: background, type: string}
+    - {name: ability, label: ability, type: string}
+    - {name: personal_information_Birthday, label: personal_information_Birthday, type: number}
+    - {name: personal_information_Age, label: personal_information_Age, type: number}
