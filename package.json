@@ -1,14 +1,15 @@
 {
   "dependencies": {
-    "minimist": "^1.2.8"
+    "minimist": "^1.2.8",
+    "ncp": "^2.0.0"
   },
   "name": "build",
   "version": "1.0.0",
   "description": "build-html",
   "main": "build-html.js",
-  "devDependencies": {},
   "scripts": {
-    "build": "node build-html.js about.json about.template.html about.html"
+    "build": "node build-html.js about.json about.template.html about.html",
+    "build_website": "node build-website.js"
   },
   "author": "",
   "license": "ISC"

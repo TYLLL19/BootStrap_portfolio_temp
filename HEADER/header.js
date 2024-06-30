@@ -12,9 +12,9 @@ function build_header(currentPage) {
 
         <nav id="navmenu" class="navmenu">
           <ul>
-            <li><a href="index.html" class="${currentPage === 'index.json'?'active':''}">Home<br></a></li>
-            <li><a href="about.html" class="${currentPage === 'about.json'?'active':''}">About</a></li>
-            <li class="dropdown"><a href="gallery.html" class="${currentPage === 'gallery.json'?'active':''}"><span>Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a href="index.html" class="${currentPage === 'index'?'active':''}">Home<br></a></li>
+            <li><a href="about.html" class="${currentPage === 'about'?'active':''}">About</a></li>
+            <li class="dropdown"><a href="gallery.html" class="${currentPage === 'gallery'?'active':''}"><span>Gallery</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="gallery.html">Nature</a></li>
                 <li><a href="gallery.html">People</a></li>
@@ -33,8 +33,8 @@ function build_header(currentPage) {
                 </li>
               </ul>
             </li>
-            <li><a href="services.html" class="${currentPage === 'services.json'?'active':''}">Services</a></li>
-            <li><a href="contact.html" class="${currentPage === 'contact.json'?'active':''}">Contact</a></li>
+            <li><a href="services.html" class="${currentPage === 'services'?'active':''}">Services</a></li>
+            <li><a href="contact.html" class="${currentPage === 'contact'?'active':''}">Contact</a></li>
           </ul>
           <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
