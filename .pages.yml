@@ -2,7 +2,7 @@ media: assets
 
 content:
   - name: pages
-    label: Posts
+    label: Pages
     path: docs
     type: collection
     fields:
