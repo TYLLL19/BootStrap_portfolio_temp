@@ -29,3 +29,4 @@ jobs:
         BRANCH: out
         FOLDER: out
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+ 
