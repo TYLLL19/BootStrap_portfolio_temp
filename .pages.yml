@@ -6,4 +6,4 @@ content:
     path: pageCMS
     type: collection
     fields:
-    - {name: title, label: Title, type: string}
+    - {name: title, label: JsonTitle, type: string}
