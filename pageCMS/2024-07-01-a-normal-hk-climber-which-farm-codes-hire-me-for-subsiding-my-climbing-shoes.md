@@ -1,4 +1,5 @@
 ---
+title: About
 description: A normal HK climber which farm codes, hire me for subsiding my climbing shoes
 buttonText: Check on my resume
 background: nformation Engineering Major University Student
