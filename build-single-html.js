@@ -32,5 +32,5 @@ module.exports = function (pageSlug) {
   }
 
   // always write the output html under a directory called "out"
-  fs.writeFileSync(`./out/${pageSlug}.html`, html);
+  fs.writeFileSync(`./out/data/${pageSlug}.html`, html);
 };
