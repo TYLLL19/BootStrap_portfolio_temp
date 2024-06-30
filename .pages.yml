@@ -11,5 +11,12 @@ content:
     - {name: buttonText, label: buttonText, type: string}
     - {name: background, label: background, type: string}
     - {name: ability, label: ability, type: string}
-    - {name: personal_information_Birthday, label: personal_information_Birthday, type: number}
-    - {name: personal_information_Age, label: personal_information_Age, type: number}
+    - {name: Birthday, label: Birthday, type: string}
+    - {name: Website, label: Website, type: string}
+    - {name: Age, label: Age, type: number}
+    - {name: Degree, label: Degree, type: string}
+    - {name: City, label: City, type: string}
+    - {name: Freelance, label: Freelance, type: string}
+    - {name: selfIntro1, label: selfIntro1, type: string}
+    - {name: selfIntro2, label: selfIntro2, type: string}
+    
