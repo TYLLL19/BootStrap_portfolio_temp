@@ -19,7 +19,6 @@ jsonFiles.forEach((file) => {
   }
 });
 
-
 // After building all the HTML files, copy the CSS and JS files to the out directory
 // copy the whole assets folder to the out/assets directory
 const ncp = require("ncp").ncp;
