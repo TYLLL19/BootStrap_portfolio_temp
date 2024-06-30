@@ -1,1 +1,8 @@
 media: assets
+content:
+  - name: pages
+    label: pages
+    path: out
+    type: collection
+    fields:
+    - { type: string, name: title, label: Title}
