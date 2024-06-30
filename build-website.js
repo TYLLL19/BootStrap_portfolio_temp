@@ -19,13 +19,14 @@ jsonFiles.forEach((file) => {
   }
 });
 
-// After building all the HTML files, copy the CSS and JS files to the out directory
+// After building all the HTML files, put them in a folder called "html", then copy the CSS and JS files to the out directory
 // copy the whole assets folder to the out/assets directory
-const ncp = require("ncp").ncp;
-ncp.limit = 16;
-ncp("./assets", "./out/assets", function (err) {
-  if (err) {
-    return console.error(err);
-  }
-  console.log("🚀 Copy assets done!");
-});
+const copydir = require("copy-dir");
+copydir.sync("assets", "out/assets");
+console.log("✅ Copied assets folder to out directory");
+
+// copy the whole HTML folder to the out directory
+copydir.sync("out", "html");
+console.log("✅ Copied out folder to html directory");
+console.log("✅ All HTML files are created successfully");
+
