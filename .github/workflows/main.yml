@@ -2,7 +2,8 @@ name: CI
 
 on:
   push:
-    branches: [ "main" ]
+    branches: 
+      - main 
 
 
 jobs:
@@ -10,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@main
 
       - name: Run build-html.js (services.json, services.template.html, html/footer.html -> services.html)
         run: node build-html.js services.json services.template.html html/footer.html html/services.html
@@ -39,5 +40,5 @@ jobs:
       env:
         REPO: self
         BRANCH: HTML
-        FOLDER: HTML
+        FOLDER: /Users/tingyatleung/Documents/Bootstrap temp/BootStrap_portfolio_temp/HTML
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
