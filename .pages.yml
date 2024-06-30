@@ -1,1 +1,9 @@
 media: assets 
+
+content:
+  - name: Pages
+    label: Pages
+    path: pageCMS
+    type: collection
+    fields:
+    - {name: title, label: Title, type: string}
