@@ -20,9 +20,6 @@ jsonFiles.forEach((file) => {
 });
 
 //add a new folder named "html" in the out directory, then add all the HTML files just created to the out/html directory
-const fs = require("fs");
-const path = require("path");
-const ncp = require("ncp").ncp;
 ncp.limit = 16;
 // Create the out/html directory if it doesn't exist
 const outDir = "./out/html";
