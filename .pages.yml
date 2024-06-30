@@ -7,3 +7,4 @@ content:
     type: collection
     fields:
       - {name: title, label: Title, type: string}
+      - {name: description, label: Description, type: string}
