@@ -24,7 +24,7 @@ jsonFiles.forEach((file) => {
 // copy the whole assets folder to the out/assets directory
 const ncp = require("ncp").ncp;
 ncp.limit = 16;
-ncp("./assets", "./out/assets", function (err) {
+ncp("./assets", "./out/data/assets", function (err) {
   if (err) {
     return console.error(err);
   }
