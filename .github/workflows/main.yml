@@ -40,5 +40,5 @@ jobs:
       env:
         REPO: self
         BRANCH: HTML
-        FOLDER: /Users/tingyatleung/Documents/Bootstrap temp/BootStrap_portfolio_temp/HTML
+        FOLDER: HTML
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
