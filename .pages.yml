@@ -6,6 +6,7 @@ content:
     path: pageCMS
     type: collection
     fields:
+    - {name: title, label: Title, type: string}
     - {name: description, label: description, type: string}
     - {name: buttonText, label: buttonText, type: string}
     - {name: background, label: background, type: string}
