@@ -1,8 +1,0 @@
-media: assets
-content:
-  - name: pages
-    label: pages
-    path: data
-    type: collection
-    fields:
-    - { type: string, name: title, label: Title}
