@@ -1,7 +1,7 @@
 media: assets
 
 content:
-  - name: posts
+  - name: pages
     label: Posts
     path: src/_posts
     type: collection
