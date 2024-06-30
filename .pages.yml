@@ -1,0 +1,9 @@
+media: assets
+
+content:
+  - name: pages
+    label: Posts
+    path: docs
+    type: collection
+    fields:
+      - {name: title, label: Title, type: string}
