@@ -19,28 +19,37 @@ jsonFiles.forEach((file) => {
   }
 });
 
-// After building all the HTML files, put them in a folder called "html",
-// copy the whole assets folder to the out/assets directory
-
-const copydir = require("copy-dir");
-const rimraf = require("rimraf");
-
-// Remove the existing html folder
-rimraf.sync("./html");
-
-// Create a new html folder
-fs.mkdirSync("./html");
-
-// Copy all HTML files to the html folder
-fs.readdirSync(".").forEach((file) => {
+//add a new folder named "html" in the out directory, then add all the HTML files just created to the out/html directory
+const fs = require("fs");
+const path = require("path");
+const ncp = require("ncp").ncp;
+ncp.limit = 16;
+// Create the out/html directory if it doesn't exist
+const outDir = "./out/html";
+if (!fs.existsSync(outDir)) {
+  fs.mkdirSync(outDir, { recursive: true });
+}
+// Move all HTML files to the out/html directory
+const htmlFiles = fs.readdirSync("./out");
+htmlFiles.forEach((file) => {
   if (file.endsWith(".html")) {
-    fs.copyFileSync(file, `./html/${file}`);
+    fs.renameSync(path.join
+    ("./out", file), path.join(outDir, file));
     }
 }
 );
+console.log("🚀 Move HTML files done!");
 
-// Copy the assets folder to out/assets
-copydir.sync("./assets", "./html/assets");
 
-console.log("✅ HTML files and assets copied successfully!");
 
+
+// After building all the HTML files, copy the CSS and JS files to the out directory
+// copy the whole assets folder to the out/assets directory
+const ncp = require("ncp").ncp;
+ncp.limit = 16;
+ncp("./assets", "./out/assets", function (err) {
+  if (err) {
+    return console.error(err);
+  }
+  console.log("🚀 Copy assets done!");
+});
