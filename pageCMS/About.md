@@ -8,6 +8,7 @@ Birthday: 31-10-1998
 Website: https://tylll19.github.io/BootStrap_portfolio_temp/index.html
 Age: 26
 Degree: Bachelor
+Phone: 68018409
 City: Hong Kong
 Freelance: Available
 selfIntro1: Hi i am a student from HK who providing web development service.
