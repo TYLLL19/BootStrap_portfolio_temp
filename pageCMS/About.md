@@ -2,7 +2,7 @@
 title: About
 description: A normal HK climber which farm codes, hire me for subsiding my climbing shoes
 buttonText: Check on my resume
-background: nformation Engineering Major University Student
+background: Information Engineering Major University Student
 ability: Providing services for web/mobile app development
 Birthday: 31-10-1998
 Website: https://tylll19.github.io/BootStrap_portfolio_temp/index.html
