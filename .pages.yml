@@ -15,6 +15,7 @@ content:
     - {name: Website, label: Website, type: string}
     - {name: Age, label: Age, type: number}
     - {name: Degree, label: Degree, type: string}
+    - {name: Phone, label: Phone, type: number}
     - {name: City, label: City, type: string}
     - {name: Freelance, label: Freelance, type: string}
     - {name: selfIntro1, label: selfIntro1, type: string}
