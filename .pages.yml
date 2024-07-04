@@ -3,7 +3,7 @@ media: assets
 content:
   - name: Contact
     label: Contact
-    path: pageCMS
+    path: src/contact.json
     type: file
     fields:
       - name: title
