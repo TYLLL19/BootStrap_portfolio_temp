@@ -3,7 +3,8 @@ media: assets
 content:
   - name: Contact
     label: Contact
-    path: src/_data/site.json
+    path: pageCMS
+    type: file
     fields:
       - name: title
         label: Website title
