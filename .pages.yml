@@ -1,6 +1,11 @@
 media: assets 
 
 content:
+  - name: Contact
+    label: Contact
+    path: pageCMS
+    fields:
+    - {name: title, label: Title, type: string}  
   - name: About
     label: About
     path: pageCMS
