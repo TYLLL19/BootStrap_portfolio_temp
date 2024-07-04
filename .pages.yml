@@ -8,8 +8,6 @@ content:
       - name: title
         label: Website title
         type: string
-    fields:
-    - {name: title, label: Title, type: string}  
   - name: About
     label: About
     path: pageCMS
