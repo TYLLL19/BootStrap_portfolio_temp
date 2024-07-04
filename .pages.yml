@@ -9,6 +9,14 @@ content:
       - name: title
         label: Website title
         type: string
+  - name: Services
+    label: Services
+    path: src/services.md
+    type: file
+    fields:
+      - name: title
+        label: Website title
+        type: string
   - name: About
     label: About
     path: pageCMS
