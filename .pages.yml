@@ -48,9 +48,10 @@ content:
         label: ability
         type: string
 
-      - name: Birthday
-        label: Birthday 
+      - name: info
+        label: info 
         type: string
+        list: true
 
   - name: Gallery
     label: Gallery
