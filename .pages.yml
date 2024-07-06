@@ -32,8 +32,24 @@ content:
     path: src/about.json
     type: file
     fields:
-      - name: title
-        label: Website title
+      - name: description
+        label: description
+        type: string
+
+      - name: buttonText
+        label: buttonText
+        type: string
+
+      - name: background
+        label: background
+        type: string
+
+      - name: ability
+        label: ability
+        type: string
+
+      - name: Birthday
+        label: Birthday 
         type: string
 
   - name: Gallery
