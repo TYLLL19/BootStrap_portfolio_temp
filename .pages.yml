@@ -50,7 +50,7 @@ content:
 
       - name: info
         label: info 
-        type: string
+        type: text
 
 
   - name: Gallery
