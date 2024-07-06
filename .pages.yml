@@ -10,7 +10,6 @@ content:
         label: Website title
         type: string
 
-content:
   - name: About
     label: about
     path: src/about.json
@@ -20,7 +19,6 @@ content:
         label: Website title
         type: string
 
-content:
   - name: Gallery
     label: gallery
     path: src/gallery.json
@@ -29,7 +27,7 @@ content:
       - name: title
         label: Website title
         type: string
-content:
+        
   - name: Index
     label: index
     path: src/index.json
@@ -38,7 +36,7 @@ content:
       - name: title
         label: Website title
         type: string
-content:
+        
   - name: Services
     label: services
     path: src/services.json
