@@ -149,29 +149,52 @@ content:
         label: ability
         type: string
 
-      - name: title
-        label: Website title
+      - name: buttonText
+        label: buttonText
         type: string
 
-      - name: title
-        label: Website title
+      - name: Web_Development
+        label: Web Development
         type: string
 
-      - name: title
-        label: Website title
+      - name: App_Development
+        label: App Development
         type: string
 
-      - name: title
-        label: Website title
+      - name: Canva_Design
+        label: Canva Design
         type: string
 
-      - name: title
-        label: Website title
+      - name: Figma_Design
+        label: Figma Design 
         type: string
 
-      - name: title
-        label: Website title
+      - name: Web_prices
+        label: Web_prices
         type: string
 
+      - name: Web_prices
+        label: Web prices
+        type: string
+
+      - name: App_prices
+        label: App prices
+        type: string
+
+      - name: Canva_prices
+        label: Canva prices
+        type: string
+
+      - name: Figma_prices
+        label: Figma prices
+        type: string
+
+      - name: ChatGPT_prices
+        label: ChatGPT prices
+        type: string
+
+      - name: AI_prices
+        label: AI prices
+        type: string
   
     
