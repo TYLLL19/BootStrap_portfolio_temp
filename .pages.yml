@@ -88,14 +88,33 @@ content:
         label: selfIntro2 
         type: string
 
-
   - name: Gallery
     label: Gallery
     path: src/gallery.json
     type: file
     fields:
-      - name: title
-        label: Website title
+      - name: selfIntro1
+        label: selfIntro1
+        type: string
+
+      - name: buttonText
+        label: buttonText
+        type: string
+
+      - name: Location
+        label: Hong Kong
+        type: string
+
+      - name: Website
+        label: Website 
+        type: string
+
+      - name: Phone
+        label: Phone
+        type: string
+
+      - name: Email
+        label: Email
         type: string
         
   - name: Index
