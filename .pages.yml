@@ -51,7 +51,7 @@ content:
       - name: info
         label: info 
         type: string
-        list: true
+
 
   - name: Gallery
     label: Gallery
