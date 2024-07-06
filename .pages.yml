@@ -6,7 +6,24 @@ content:
     path: src/contact.json
     type: file
     fields:
-      - name: title
+      - name: selfIntro1
+        label: Website title
+        type: string
+
+      - name: personal_information
+        label: Website title
+        type: string
+        list: true
+
+      - name: selfIntro1
+        label: Website title
+        type: string
+
+      - name: selfIntro1
+        label: Website title
+        type: string
+
+      - name: selfIntro1
         label: Website title
         type: string
 
