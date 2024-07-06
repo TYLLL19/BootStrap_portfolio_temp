@@ -26,11 +26,6 @@ content:
         label: Email
         type: string
 
-      
-
-    
-      
-
 
   - name: About
     label: About
