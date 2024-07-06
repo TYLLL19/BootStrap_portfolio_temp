@@ -50,43 +50,43 @@ content:
 
       - name: Birthday
         label: Birthday 
-        type: text
+        type: string
 
       - name: Age
         label: Age 
-        type: text
+        type: string
 
       - name: Website
         label: Website 
-        type: text
+        type: string
 
       - name: Degree
         label: Degree 
-        type: text
+        type: string
 
       - name: Phone
         label: Phone 
-        type: text
+        type: string
 
       - name: Email
         label: Email 
-        type: text
+        type: string
 
       - name: City
         label: City 
-        type: text
+        type: string
 
       - name: Freelance
         label: Freelance 
-        type: text
+        type: string
 
       - name: selfIntro1
         label: selfIntro1 
-        type: text
+        type: string
 
       - name: selfIntro2
         label: selfIntro2 
-        type: text
+        type: string
 
 
   - name: Gallery
