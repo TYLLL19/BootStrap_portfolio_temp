@@ -9,41 +9,6 @@ content:
       - name: title
         label: Website title
         type: string
-  - name: About
-    label: Contact
-    path: src/about.json
-    type: file
-    fields:
-      - name: title
-        label: Website title
-        type: string
 
-content:
-  - name: Gallery
-    label: Contact
-    path: src/gallery.json
-    type: file
-    fields:
-      - name: title
-        label: Website title
-        type: string
-content:
-  - name: Index
-    label: Contact
-    path: src/index.json
-    type: file
-    fields:
-      - name: title
-        label: Website title
-        type: string
-content:
-  - name: Services
-    label: Contact
-    path: src/services.json
-    type: file
-    fields:
-      - name: title
-        label: Website title
-        type: string
   
     
