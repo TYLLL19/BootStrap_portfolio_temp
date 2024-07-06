@@ -3,7 +3,7 @@ media: assets
 content:
   - name: Contact
     label: Contact
-    path: src/contact.json
+    path: JSON/contact.json
     type: file
     fields:
       - name: selfIntro1
