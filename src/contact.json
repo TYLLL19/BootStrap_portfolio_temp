@@ -1,7 +1,8 @@
 {
   "selfIntro1": "Hi i am a student from HK who providing web development service.",
   "personal_information": [
-    "Hong Kong",
-    "https://tylll19.github.io/BootStrap_portfolio_temp/index.html"
+    "    {       \"title\": \"Birthday\",       \"value\": \"31 Oct 1998\"     }",
+    "https://tylll19.github.io/BootStrap_portfolio_temp/index.html",
+    null
   ]
 }
