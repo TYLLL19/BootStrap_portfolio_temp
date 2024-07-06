@@ -9,7 +9,6 @@ content:
       - name: title
         label: Website title
         type: string
-content:
   - name: About
     label: Contact
     path: src/about.json
