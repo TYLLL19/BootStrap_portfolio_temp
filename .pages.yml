@@ -7,25 +7,14 @@ content:
     type: file
     fields:
       - name: selfIntro1
-        label: Website title
+        label: SelfIntro1
         type: string
 
       - name: personal_information
-        label: Website title
+        label: Personal_information
         type: string
         list: true
 
-      - name: selfIntro1
-        label: Website title
-        type: string
-
-      - name: selfIntro1
-        label: Website title
-        type: string
-
-      - name: selfIntro1
-        label: Website title
-        type: string
 
   - name: About
     label: About
