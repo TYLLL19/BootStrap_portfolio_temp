@@ -1,0 +1,14 @@
+{
+  "ability": "Providing services for web/mobile app development",
+  "buttonText": "Check on my resume",
+  "Web_Development": "123",
+  "App_Development": "123",
+  "Canva_Design": "123",
+  "Figma_Design": "123",
+  "Web_prices": "$100",
+  "App_prices": "$200",
+  "Canva_prices": "$300",
+  "Figma_prices": "$400",
+  "ChatGPT_prices": "$500",
+  "AI_prices": "$600"
+}
