@@ -145,8 +145,8 @@ content:
     path: src/services.json
     type: file
     fields:
-      - name: title
-        label: Website title
+      - name: ability
+        label: ability
         type: string
 
       - name: title
