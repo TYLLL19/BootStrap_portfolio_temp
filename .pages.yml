@@ -48,8 +48,44 @@ content:
         label: ability
         type: string
 
-      - name: info
-        label: info 
+      - name: Birthday
+        label: Birthday 
+        type: text
+
+      - name: Age
+        label: Age 
+        type: text
+
+      - name: Website
+        label: Website 
+        type: text
+
+      - name: Degree
+        label: Degree 
+        type: text
+
+      - name: Phone
+        label: Phone 
+        type: text
+
+      - name: Email
+        label: Email 
+        type: text
+
+      - name: City
+        label: City 
+        type: text
+
+      - name: Freelance
+        label: Freelance 
+        type: text
+
+      - name: selfIntro1
+        label: selfIntro1 
+        type: text
+
+      - name: selfIntro2
+        label: selfIntro2 
         type: text
 
 
