@@ -11,7 +11,7 @@ content:
         type: string
 
   - name: About
-    label: about
+    label: About
     path: src/about.json
     type: file
     fields:
@@ -20,7 +20,7 @@ content:
         type: string
 
   - name: Gallery
-    label: gallery
+    label: Gallery
     path: src/gallery.json
     type: file
     fields:
@@ -29,7 +29,7 @@ content:
         type: string
         
   - name: Index
-    label: index
+    label: Index
     path: src/index.json
     type: file
     fields:
@@ -38,7 +38,7 @@ content:
         type: string
         
   - name: Services
-    label: services
+    label: Services
     path: src/services.json
     type: file
     fields:
