@@ -173,10 +173,6 @@ content:
         label: Web_prices
         type: string
 
-      - name: Web_prices
-        label: Web prices
-        type: string
-
       - name: App_prices
         label: App prices
         type: string
