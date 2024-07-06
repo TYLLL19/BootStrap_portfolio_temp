@@ -10,10 +10,26 @@ content:
         label: SelfIntro1
         type: string
 
-      - name: personal_information
-        label: Personal_information
+      - name: Location
+        label: Location
         type: string
-        list: true
+
+      - name: Website
+        label: Website
+        type: string
+
+      - name: Phone
+        label: Phone
+        type: string
+
+      - name: Email
+        label: Email
+        type: string
+
+      
+
+    
+      
 
 
   - name: About
