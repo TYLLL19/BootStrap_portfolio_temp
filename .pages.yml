@@ -122,9 +122,23 @@ content:
     path: src/index.json
     type: file
     fields:
-      - name: title
-        label: Website title
+      - name: Name
+        label: Name
         type: string
+
+      - name: Job
+        label: Job
+        type: string
+
+      - name: selfIntro
+        label: selfIntro
+        type: string
+
+      - name: buttonText
+        label: buttonText
+        type: string
+
+      
         
   - name: Services
     label: Services
