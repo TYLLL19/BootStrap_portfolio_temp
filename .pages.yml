@@ -9,31 +9,6 @@ content:
       - name: title
         label: Website title
         type: string
-  - name: Services
-    label: Services
-    path: src/services.md
-    type: file
-    fields:
-      - name: title
-        label: Website title
-        type: string
-  - name: About
-    label: About
-    path: pageCMS
-    type: collection
-    fields:
-    - {name: title, label: Title, type: string}
-    - {name: description, label: description, type: string}
-    - {name: buttonText, label: buttonText, type: string}
-    - {name: background, label: background, type: string}
-    - {name: ability, label: ability, type: string}
-    - {name: Birthday, label: Birthday, type: string}
-    - {name: Website, label: Website, type: string}
-    - {name: Age, label: Age, type: number}
-    - {name: Degree, label: Degree, type: string}
-    - {name: Phone, label: Phone, type: number}
-    - {name: City, label: City, type: string}
-    - {name: Freelance, label: Freelance, type: string}
-    - {name: selfIntro1, label: selfIntro1, type: string}
-    - {name: selfIntro2, label: selfIntro2, type: string}
+
+  
     
