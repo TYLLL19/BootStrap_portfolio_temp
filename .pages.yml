@@ -149,5 +149,29 @@ content:
         label: Website title
         type: string
 
+      - name: title
+        label: Website title
+        type: string
+
+      - name: title
+        label: Website title
+        type: string
+
+      - name: title
+        label: Website title
+        type: string
+
+      - name: title
+        label: Website title
+        type: string
+
+      - name: title
+        label: Website title
+        type: string
+
+      - name: title
+        label: Website title
+        type: string
+
   
     
