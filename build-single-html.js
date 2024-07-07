@@ -5,7 +5,7 @@ module.exports = function (pageSlug) {
   // about
   // 1. Read the JSON file
   // e.g. read about.json
-  const jsonData = require(`./JSON/${pageSlug}.json`);
+  const jsonData = require(`./src/${pageSlug}.json`);
   //   console.log("json", jsonData);
   //2. File Read the template HTML file
   // e.g. read template.html
