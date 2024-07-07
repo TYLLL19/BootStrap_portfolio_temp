@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "marked": "^13.0.2",
     "minimist": "^1.2.8",
     "ncp": "^2.0.0"
   },
