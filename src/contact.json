@@ -1,7 +1,7 @@
-[
-  {
-    "selfIntro1": "abc",
-    "Location": "abc",
-    "Website": "abc"
-  }
-]
+{
+  "selfIntro1": [
+    "abcx",
+    "abc",
+    "abc"
+  ]
+}
