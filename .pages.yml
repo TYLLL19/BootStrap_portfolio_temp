@@ -8,9 +8,9 @@ content:
     fields:
       - name: selfIntro1
         label: SelfIntro1
-        type: object
+        type: string
+        list: true
         
-
       - name: Location
         label: Location
         type: string
