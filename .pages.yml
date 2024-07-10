@@ -90,7 +90,7 @@ content:
 
       - name: personalInfo
         label: selfIntro2 
-        type: object
+        type: string
         list: 
               min: 1
               max: 4
