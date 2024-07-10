@@ -88,6 +88,11 @@ content:
         label: selfIntro2 
         type: string
 
+      - name: personalInfo
+        label: selfIntro2 
+        type: object
+        list: true
+
   - name: Gallery
     label: Gallery
     path: src/gallery.json
