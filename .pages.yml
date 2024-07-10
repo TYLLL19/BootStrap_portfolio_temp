@@ -4,7 +4,7 @@ content:
   - name: Contact
     label: Contact
     path: src/contact.json
-    type: file
+    type: object
     fields:
       - name: selfIntro1
         label: SelfIntro1
