@@ -91,7 +91,9 @@ content:
       - name: personalInfo
         label: selfIntro2 
         type: object
-        list: true
+        list: 
+              min: 1
+              max: 4
 
   - name: Gallery
     label: Gallery
