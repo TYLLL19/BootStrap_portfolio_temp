@@ -4,12 +4,12 @@ content:
   - name: Contact
     label: Contact
     path: src/contact.json
-    type: object
+    type: file
     fields:
       - name: selfIntro1
         label: SelfIntro1
-        type: string
-        list: true
+        type: object
+        
 
       - name: Location
         label: Location
