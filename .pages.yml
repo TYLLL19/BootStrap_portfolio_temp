@@ -10,6 +10,10 @@ content:
         label: SelfIntro1
         type: string
         list: true
+        fields: 
+        - name: title
+          label: title
+          type: string
         
       - name: Location
         label: Location
