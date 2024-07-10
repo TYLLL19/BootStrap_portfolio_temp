@@ -5,6 +5,7 @@ content:
     label: Contact
     path: src/contact.json
     type: file
+    list: true
     fields:
       - name: selfIntro1
         label: SelfIntro1
