@@ -53,12 +53,20 @@ content:
         type: object
         list: true
         fields:
-          - name: Birthday
+          - name: title
             label: Birthday 
+            type: string
+
+          - name: value 
+            label: Date 
             type: date
 
-          - name: Age
+          - name: title
             label: Age 
+            type: string
+
+          - name: value 
+            label: number 
             type: number
 
       - name: Website
