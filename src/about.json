@@ -7,18 +7,14 @@
     {
       "Birthday": "1998-10-31",
       "Age": "30",
-      "Website": "https://tylll19.github.io/BootStrap_portfolio_temp/index.html"
+      "Website": "https://tylll19.github.io/BootStrap_portfolio_temp/index.html",
+      "Degree": "Bachelor",
+      "Phone": "+852 68018409",
+      "Email": "leungtingyat19@gmail.com",
+      "City": "Hong Kong",
+      "Freelance": "available"
     }
   ],
-  "Website": "https://tylll19.github.io/BootStrap_portfolio_temp/index.html",
-  "Degree": "Bachelor",
-  "Phone": "+852 68018409",
-  "Email": "leungtingyat19@gmail.com",
-  "City": "Hong Kong",
-  "Freelance": "available",
   "selfIntro1": "Hi i am a student from HK who providing web development service.",
-  "selfIntro2": "Contact me for further details",
-  "personalInfo": [
-    "123"
-  ]
+  "selfIntro2": "Contact me for further details"
 }
