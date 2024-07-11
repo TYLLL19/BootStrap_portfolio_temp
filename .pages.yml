@@ -75,21 +75,15 @@ content:
         label: buttonText
         type: string
 
-      - name: Location
-        label: Location
-        type: string
-
-      - name: Website
-        label: Website 
-        type: string
-
-      - name: Phone
-        label: Phone
-        type: string
-
-      - name: Email
-        label: Email
-        type: string
+      - name: personal_Info
+        label: personal_Info
+        type: object
+        list: true
+        fields:
+          - {name: Location,label: Location, type: string}
+          - {name: Website,label: Website, type: string}
+          - {name: Phone,label: Phone, type: string}
+          - {name: Email,label: Email, type: string}
         
   - name: Index
     label: Index
@@ -127,44 +121,20 @@ content:
         label: buttonText
         type: string
 
-      - name: Web_Development
-        label: Web Development
-        type: string
-
-      - name: App_Development
-        label: App Development
-        type: string
-
-      - name: Canva_Design
-        label: Canva Design
-        type: string
-
-      - name: Figma_Design
-        label: Figma Design 
-        type: string
-
-      - name: Web_prices
-        label: Web_prices
-        type: string
-
-      - name: App_prices
-        label: App prices
-        type: string
-
-      - name: Canva_prices
-        label: Canva prices
-        type: string
-
-      - name: Figma_prices
-        label: Figma prices
-        type: string
-
-      - name: ChatGPT_prices
-        label: ChatGPT prices
-        type: string
-
-      - name: AI_prices
-        label: AI prices
-        type: string
+      - name: personal_Info
+        label: personal_Info
+        type: object
+        list: true
+        fields:
+          - {name: Web_Development,label: Web_Development, type: string}
+          - {name: App_Development,label: App_Development, type: string}
+          - {name: Canva_Design,label: Canva_Design, type: string}
+          - {name: Figma_Design,label: Figma_Design, type: string}
+          - {name: Web_prices,label: Web_prices, type: string}
+          - {name: App_prices,label: App_prices, type: string}
+          - {name: Canva_prices,label: Canva_prices, type: string}
+          - {name: Figma_prices,label: Figma_prices, type: string}
+          - {name: ChatGPT_prices,label: ChatGPT_prices, type: string}
+          - {name: AI_prices,label: AI_prices, type: string}
   
     
