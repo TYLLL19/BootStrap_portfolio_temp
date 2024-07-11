@@ -15,7 +15,7 @@ content:
           - {name: Location,label: Location, type: string}
           - {name: Website,label: Website, type: string}
           - {name: Phone,label: Phone, type: string}
-          - {name: Email,label: Email, type: string, list: true}
+          - {name: Email,label: Email, type: string}
 
 
   - name: About
