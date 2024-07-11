@@ -53,19 +53,19 @@ content:
         type: object
         list: true
         fields:
-          - name: title
+          - name: Birthday
             label: Birthday 
             type: string
 
-          - name: value 
+          - name: Date 
             label: Date 
             type: date
 
-          - name: title
+          - name: Age
             label: Age 
             type: string
 
-          - name: value 
+          - name: number 
             label: number 
             type: number
 
