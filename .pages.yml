@@ -55,11 +55,11 @@ content:
         fields:
           - name: Birthday
             label: Birthday 
-            type: string
+            type: number
 
           - name: Age
             label: Age 
-            type: string
+            type: number
 
       - name: Website
         label: Website 
