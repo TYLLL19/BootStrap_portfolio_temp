@@ -55,7 +55,7 @@ content:
         fields:
           - name: Birthday
             label: Birthday 
-            type: number
+            type: date
 
           - name: Age
             label: Age 
