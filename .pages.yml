@@ -8,8 +8,7 @@ content:
     fields:
       - name: selfIntro1
         label: SelfIntro1
-        type: object
-        list: true 
+        type: string
         
       - name: Location
         label: Location
@@ -49,13 +48,18 @@ content:
         label: ability
         type: string
 
-      - name: Birthday
-        label: Birthday 
-        type: string
+      - name: personal_Info
+        label: personal_Info
+        type: object
+        list: true
+        fields:
+          - name: Birthday
+            label: Birthday 
+            type: string
 
-      - name: Age
-        label: Age 
-        type: string
+          - name: Age
+            label: Age 
+            type: string
 
       - name: Website
         label: Website 
