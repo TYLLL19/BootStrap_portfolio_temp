@@ -74,16 +74,6 @@ content:
       - name: buttonText
         label: buttonText
         type: string
-
-      - name: personal_Info
-        label: personal_Info
-        type: object
-        list: true
-        fields:
-          - {name: Location,label: Location, type: string}
-          - {name: Website,label: Website, type: string}
-          - {name: Phone,label: Phone, type: string}
-          - {name: Email,label: Email, type: string}
         
   - name: Index
     label: Index
