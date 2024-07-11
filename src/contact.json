@@ -1,7 +1,11 @@
 {
-  "selfIntro1": [
-    "abcx",
-    "abc",
-    "abc"
+  "selfIntro1": "abcx",
+  "personal_Info": [
+    {
+      "Location": "Hong Kong",
+      "Website": "https://tylll19.github.io/BootStrap_portfolio_temp/index.html",
+      "Phone": "+852 68018409",
+      "Email": "leungtingyat19@gmail.com"
+    }
   ]
 }
