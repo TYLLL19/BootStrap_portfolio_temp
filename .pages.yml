@@ -8,12 +8,8 @@ content:
     fields:
       - name: selfIntro1
         label: SelfIntro1
-        type: string
-        list: true
-        fields: 
-        - name: title
-          label: title
-          type: string
+        type: object
+        list: true 
         
       - name: Location
         label: Location
