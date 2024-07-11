@@ -54,7 +54,7 @@ content:
         list: true
         fields:
           - {name: Birthday,label: Birthday, type: date}
-          - {name: Age,label: Age, type: number}
+          - {name: Age,label: Age, type: string}
           - {name: Website,label: Website, type: string}
 
       - name: Website
