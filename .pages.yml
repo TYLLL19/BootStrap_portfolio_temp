@@ -56,30 +56,12 @@ content:
           - {name: Birthday,label: Birthday, type: date}
           - {name: Age,label: Age, type: string}
           - {name: Website,label: Website, type: string}
-
-      - name: Website
-        label: Website 
-        type: string
-
-      - name: Degree
-        label: Degree 
-        type: string
-
-      - name: Phone
-        label: Phone 
-        type: string
-
-      - name: Email
-        label: Email 
-        type: string
-
-      - name: City
-        label: City 
-        type: string
-
-      - name: Freelance
-        label: Freelance 
-        type: string
+          - {name: Degree,label: Degree, type: string}
+          - {name: Phone,label: Phone, type: string}
+          - {name: Email,label: Email, type: string}
+          - {name: City,label: City, type: string}
+          - {name: Freelance,label: Freelance, type: string}
+          - {name: Email,label: Email, type: string}
 
       - name: selfIntro1
         label: selfIntro1 
@@ -88,13 +70,6 @@ content:
       - name: selfIntro2
         label: selfIntro2 
         type: string
-
-      - name: personalInfo
-        label: selfIntro2 
-        type: string
-        list: 
-              min: 1
-              max: 4
 
   - name: Gallery
     label: Gallery
