@@ -53,21 +53,9 @@ content:
         type: object
         list: true
         fields:
-          - name: Birthday
-            label: Birthday 
-            type: string
-
-          - name: Date 
-            label: Date 
-            type: date
-
-          - name: Age
-            label: Age 
-            type: string
-
-          - name: number 
-            label: number 
-            type: number
+          - {name: Birthday,label: Birthday, type: date}
+          - {name: Age,label: Age, type: number}
+          - {name: Website,label: Website, type: string}
 
       - name: Website
         label: Website 
