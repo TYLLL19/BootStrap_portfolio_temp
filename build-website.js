@@ -4,7 +4,7 @@ const buildSingleHtml = require("./build-single-html");
 // Read all files under JSON directory
 const fs = require("fs");
 const path = require("path");
-const jsonFiles = fs.readdirSync("./JSON");
+const jsonFiles = fs.readdirSync("./src");
 // Loop through each file
 jsonFiles.forEach((file) => {
   try {
