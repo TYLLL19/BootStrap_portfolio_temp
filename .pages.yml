@@ -126,5 +126,6 @@ content:
           - {name: Figma_prices,label: Figma_prices, type: string}
           - {name: ChatGPT_prices,label: ChatGPT_prices, type: string}
           - {name: AI_prices,label: AI_prices, type: string}
+          - {name: testing,label: testing, type: string}
   
     
